@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="photogallery.html">Photo Gallery</a>
+              <ul class="dropdown-content">
+                <li><a href="landscape.html">Landscape</a></li>
+                <li><a href="wedding.html">Wedding</a></li>
+                <li><a href="portrait.html">Portrait</a></li>
+              </ul>
+            </li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1>Photo Gallery</h1>
+      <div class="card-container">
+        <div class="card">
+          <img src="w1.jpg" alt="Landscape Photo 1">
+          <p>Capturing Authentic Moments </p>
+        </div>
+        <div class="card">
+          <img src="w2.jpg" alt="Portrait Photo 1">
+          <p>Creating Lasting Group Memories </p>
+        </div>
+        <div class="card">
+          <img src="w3.jpg" alt="Still Life Photo 1">
+          <p>Capturing Special Moments</p>
+        </div>
+      </div>
+    <script>
+        var dropdown = document.querySelector(".dropdown");
+        var dropdownContent = document.querySelector(".dropdown-content");
+    
+        dropdown.addEventListener("click", function() {
+          dropdownContent.classList.toggle("show");
+        });
+      </script>
+  </body>
+ 
+</html>

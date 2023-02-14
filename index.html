@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="photogallery.html">Photo Gallery</a>
+          <ul class="dropdown-content">
+            <li><a href="landscape.html">Landscape</a></li>
+                <li><a href="wedding.html">Wedding</a></li>
+                <li><a href="portrait.html">Portrait</a></li>
+          </ul>
+        </li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Welcome to Our Photography Brand</h1>
+  
+  <div class="content">
+    <h1>Professional Photo &<br><span>Video Editing Services</span> <br>Brand</h1><br>
+    <p class="par">Welcome to our photography and video editing web site!<br>
+         Here, you can find a wide range of services to help you capture and create lasting memories.<br>
+        Our experienced team of professionals can help you with everything from photo shoots to family portraits and editing videos. <br>
+        We also offer packages tailored to your needs and budget, so you can get the best results without breaking the bank.<br>
+         Whether you're a professional photographer or filmmaker, or just want to capture and share special moments, we have the tools and expertise to help you create something truly special. <br>
+         Thanks for visiting!</p>
+
+        
+
+        </div>
+  <script>
+    var dropdown = document.querySelector(".dropdown");
+    var dropdownContent = document.querySelector(".dropdown-content");
+
+    dropdown.addEventListener("click", function() {
+      dropdownContent.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
